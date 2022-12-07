@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 100px;
+  width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -14,11 +14,11 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 50px;
+      width: 24px;
       height: auto;
 
       &.sub-logo {
-        width: 70px;
+        width: 50px;
       }
     }
   }
@@ -108,7 +108,7 @@
         display: block;
         font-size: 22px;
         line-height: 16px;
-
+        color: #696969;
         &:hover svg {
           color: #ffd700;
         }
