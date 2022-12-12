@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 "Heletica Neue", "san-serif";
-  color: #444;
+  color: rgb(160, 158, 158);
   background: #022c43;
   overflow: hidden;
   display: block;
