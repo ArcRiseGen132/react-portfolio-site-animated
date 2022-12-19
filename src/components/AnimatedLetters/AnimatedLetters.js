@@ -1,5 +1,5 @@
 import React from "react";
-import "./AnimatedLetters";
+import "./AnimatedLetters.scss";
 
 const AnimatedLetters = ({ letterClass, strArray, index }) => {
   return (

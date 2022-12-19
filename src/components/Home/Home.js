@@ -1,34 +1,32 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Home.scss";
+import Logo from "./Logo/Logo";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const nameArray = ["h", "e", "i", "k", "h"];
-  const jobArray = [
-    "W",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
+  const string = "Web Developer";
+  const strArray = [...string];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
 
   return (
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          Hi, <br /> I'm
+          <span className={letterClass}>H</span>
+          <span className={`${letterClass} _12`}>i</span>
+          <br />
+          <span className={`${letterClass} _13`}>I</span>
+          <span className={`${letterClass} _14`}>'m</span>
           <img src={LogoTitle} alt="developer" />
           <AnimatedLetters
             letterClass={letterClass}
@@ -36,7 +34,11 @@ const Home = () => {
             index={15}
           />
           <br />
-          Web Developer
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={strArray}
+            index={22}
+          />
         </h1>
         <h2>
           Full Stack Developer / Javascript / MERN Stack / COMPTIA Certified
@@ -45,6 +47,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };
