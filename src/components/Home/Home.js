@@ -41,7 +41,7 @@ const Home = () => {
           />
         </h1>
         <h2>
-          Full Stack Developer / Javascript / MERN Stack / COMPTIA Certified
+          Full Stack Developer / Javascript / MERN / COMPTIA Sec+ A+ Certified
         </h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
