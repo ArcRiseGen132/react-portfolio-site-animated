@@ -2,7 +2,6 @@
   "name": "react-portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ArcRiseGen132.github.io/react-portfolio-site",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
