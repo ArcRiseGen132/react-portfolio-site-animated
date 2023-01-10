@@ -52,7 +52,7 @@
 h2 {
   color: #8b8b8b;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   font-family: sans-serif;
   letter-spacing: 2px;
   animation: fadeIn 1s 1.9s backwards;
@@ -64,7 +64,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 3px;
   text-decoration: none;
-  padding: 10px 18px;
+  padding: 15px 18px;
   border: 1px solid #ffd700;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
@@ -72,7 +72,15 @@ h2 {
   &:hover {
     background-color: #ffd700;
     color: #333;
+    cursor: pointer;
   }
+}
+
+.face_picture {
+  height: 300px;
+  width: 300px;
+  margin-left: 60%;
+  margin-top: 150px;
 }
 
 @media screen and (max-width: 100%) {

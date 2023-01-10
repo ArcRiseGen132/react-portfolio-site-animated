@@ -5,14 +5,26 @@ import { Link } from "react-router-dom";
 import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Home.scss";
-import Logo from "./Logo/Logo";
+import facePicture from "../../assets/images/face_picture.jpg";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import Resume from "../../assets/documents/Sheikh_Ahmed_Resume.pdf";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const nameArray = ["h", "e", "i", "k", "h"];
   const string = "Web Developer";
   const strArray = [...string];
-
+  const downloadButtonClick = () => {
+    fetch(Resume).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = Resume;
+        alink.click();
+      });
+    });
+  };
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -43,14 +55,22 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Full Stack Developer <br /> Javascript <br /> MERN Stack <br />{" "}
-            COMPTIA Sec+ & A+
+            Full Stack Developer <br /> <br /> Javascript <br /> <br /> MERN
+            Stack <br />
+            <br /> COMPTIA Sec+ & A+
           </h2>
+          <br />
+          <btn onClick={downloadButtonClick} className="flat-button">
+            RESUME
+          </btn>
+          {/* <br />
+          <br />
+          <br /> */}
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <img src={facePicture} alt="face" className="face_picture" />
       </div>
       <Loader type="line-scale-pulse-out" />
     </div>

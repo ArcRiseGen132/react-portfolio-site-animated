@@ -14,6 +14,7 @@
     "emailjs": "^4.0.1",
     "gsap": "^3.11.3",
     "gsap-trial": "^3.11.3",
+    "js-file-download": "^0.4.12",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
