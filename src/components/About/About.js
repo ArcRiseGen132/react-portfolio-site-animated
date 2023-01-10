@@ -7,13 +7,12 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { useState, useEffect } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./About.scss";
 
-export const About = () => {
+const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -79,3 +78,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;
