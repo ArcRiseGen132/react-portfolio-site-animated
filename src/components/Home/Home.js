@@ -6,7 +6,6 @@ import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Home.scss";
 import facePicture from "../../assets/images/face_picture.jpg";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import Resume from "../../assets/documents/Sheikh_Ahmed_Resume.pdf";
 
 const Home = () => {
