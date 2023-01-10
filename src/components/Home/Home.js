@@ -39,7 +39,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="developer" />
+            <img className="solo-letter" src={LogoTitle} alt="developer" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -61,9 +61,6 @@ const Home = () => {
           <btn onClick={downloadButtonClick} className="flat-button">
             RESUME
           </btn>
-          {/* <br />
-          <br />
-          <br /> */}
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
